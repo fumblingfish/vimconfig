@@ -2,7 +2,7 @@ Vim config
 
 Install:
 ```shell
-git clone git@github.com:fumblingfish/vimconfig.git ~/.vim
+git clone https://github.com/fumblingfish/vimconfig.git ~/.vim
 ```
 
 Setup symlinks
