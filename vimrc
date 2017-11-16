@@ -25,10 +25,14 @@ imap jj <Esc>
 " nnoremap ,, :
 
 " Maps - Window handling 
-noremap <silent> ,h :wincmd h<CR>
-noremap <silent> ,j :wincmd j<CR>
-noremap <silent> ,k :wincmd k<CR>
-noremap <silent> ,l :wincmd l<CR>
+" noremap <silent> ,h :wincmd h<CR>
+" noremap <silent> ,j :wincmd j<CR>
+" noremap <silent> ,k :wincmd k<CR>
+" noremap <silent> ,l :wincmd l<CR>
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
 
 " Map - break line ctrl-j
 nnoremap <NL> i<CR><ESC>l
@@ -55,6 +59,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 
+" Auto-pairs
+Plugin 'jiangmiao/auto-pairs'
+
+" Emmet
+Plugin 'mattn/emmet-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -62,4 +72,7 @@ filetype plugin indent on    " required
 " NERDTree
 autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
+
+" Emmet
+let g:user_emmet_leader_key='<C-Z>'
 
