@@ -18,7 +18,11 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+" Map escape to jj
 imap jj <Esc>
+
+" Map command
+" nnoremap ,, :
 
 " Maps - Window handling 
 noremap <silent> ,h :wincmd h<CR>
@@ -28,6 +32,7 @@ noremap <silent> ,l :wincmd l<CR>
 
 " Map - break line ctrl-j
 nnoremap <NL> i<CR><ESC>l
+
 
 
 " Vundle Plugin configs
@@ -46,6 +51,9 @@ Plugin 'VundleVim/Vundle.vim'
 " NERDTree
 Plugin 'scrooloose/nerdtree'
 
+" Javascript highlighting
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
