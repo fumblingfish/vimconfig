@@ -4,6 +4,7 @@ syntax enable
 set ruler
 set laststatus=2
 
+
 " Set linenumbers
 set number
 
@@ -15,20 +16,20 @@ set guioptions-=L
 
 " Tabstop
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=3
+set softtabstop=3
 
-imap jj <Esc>
+" Map - Change marker
+set cpoptions+=$
 
 " Maps - Window handling 
-" noremap <silent> ,h :wincmd h<CR>
-" noremap <silent> ,j :wincmd j<CR>
-" noremap <silent> ,k :wincmd k<CR>
-" noremap <silent> ,l :wincmd l<CR>
 nmap <silent> <C-k> :wincmd k<CR>
 nmap <silent> <C-j> :wincmd j<CR>
 nmap <silent> <C-h> :wincmd h<CR>
 nmap <silent> <C-l> :wincmd l<CR>
+
+" Map - search toggle highlight \hj
+nnoremap <silent><expr> <Leader>h (&hls && v:hlsearch ? ':nohls' : ':set hls')."\n"
 
 " Map - break line ctrl-j
 nnoremap <NL> i<CR><ESC>l
