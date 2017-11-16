@@ -1,2 +1,5 @@
+" colorscheme material-theme
+
+" syntax enable
 set background=dark
-colorscheme material-theme
+colorscheme gruvbox 
