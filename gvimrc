@@ -2,4 +2,7 @@
 
 " syntax enable
 set background=dark
-colorscheme gruvbox 
+colorscheme apprentice 
+set guifont=Menlo:h12
+set linespace=2
+
