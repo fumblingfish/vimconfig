@@ -2,6 +2,7 @@
 set ruler
 set laststatus=2
 
+set autochdir
 
 " Set linenumbers
 set number
