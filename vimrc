@@ -117,7 +117,7 @@ filetype plugin indent on    " required
 autocmd vimenter * NERDTree
 let NERDTreeShowHidden=1
 " Toogle NERDTree
-nmap <silent> <C-n> :NERDTreeToggle<CR>
+nmap <silent> <leader>m :NERDTreeToggle<CR>
 
 " Emmet
 let g:user_emmet_leader_key='<C-Z>'
