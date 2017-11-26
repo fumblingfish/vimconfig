@@ -18,6 +18,8 @@ set expandtab
 set shiftwidth=3
 set softtabstop=3
 
+let g:used_javascript_libs = 'react, ramda'
+
 " Command - Toggle Colorschemes
 " ----
 " :TColors (F8 forward / )
@@ -109,6 +111,10 @@ Plugin 'tpope/vim-surround'
 " Ctrlp - Full path fuzzy finder for vim
 Plugin 'kien/ctrlp.vim'
 
+" Syntax highlighting
+Plugin 'othree/javascript-libraries-syntax.vim'
+
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -139,3 +145,8 @@ autocmd FileType scss noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 " CamelCaseMotion
 call camelcasemotion#CreateMotionMappings('<leader>')
+
+
+
+" JSX setup
+let g:jsx_ext_required = 0
